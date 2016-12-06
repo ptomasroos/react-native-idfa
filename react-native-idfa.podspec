@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "react-native-idfa"
-  s.version      = "1.0.5"
+  s.version      = "1.0.0"
   s.summary      = "A function to get IDFA for react-native"
   s.author       = ""
 
