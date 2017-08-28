@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C524FF160601AA07838789C /* libPods-IDFA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 974BD58D3EE34E68F6C2DEE6 /* libPods-IDFA.a */; };
 		C3B08D8F1DF6EE740062C725 /* PTRIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B08D8E1DF6EE740062C725 /* PTRIDFA.m */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C524FF160601AA07838789C /* libPods-IDFA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
