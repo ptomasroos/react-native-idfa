@@ -23,8 +23,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22E5E5A563B5BC2C65FA934E /* Pods-IDFA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDFA.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDFA/Pods-IDFA.release.xcconfig"; sourceTree = "<group>"; };
-		4E768107F3975A709B360F73 /* Pods-IDFA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDFA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDFA/Pods-IDFA.debug.xcconfig"; sourceTree = "<group>"; };
 		974BD58D3EE34E68F6C2DEE6 /* libPods-IDFA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IDFA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37A6A501D4244F100821B37 /* libIDFA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIDFA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B08D8D1DF6EE740062C725 /* PTRIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRIDFA.h; sourceTree = "<group>"; };
@@ -42,15 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CD6BF7FECFEF5B6EA23F4C5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4E768107F3975A709B360F73 /* Pods-IDFA.debug.xcconfig */,
-				22E5E5A563B5BC2C65FA934E /* Pods-IDFA.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6CB4BAE4C0BE139A3E700C01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +53,6 @@
 			children = (
 				C37A6A521D4244F100821B37 /* IDFA */,
 				C37A6A511D4244F100821B37 /* Products */,
-				3CD6BF7FECFEF5B6EA23F4C5 /* Pods */,
 				6CB4BAE4C0BE139A3E700C01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -93,11 +81,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C37A6A591D4244F100821B37 /* Build configuration list for PBXNativeTarget "IDFA" */;
 			buildPhases = (
-				CCCFBD56D17745DBA497D921 /* [CP] Check Pods Manifest.lock */,
 				C37A6A4C1D4244F100821B37 /* Sources */,
 				C37A6A4D1D4244F100821B37 /* Frameworks */,
 				C37A6A4E1D4244F100821B37 /* CopyFiles */,
-				F88F980B9D487EC6021BE73F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,39 +124,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CCCFBD56D17745DBA497D921 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F88F980B9D487EC6021BE73F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDFA/Pods-IDFA-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C37A6A4C1D4244F100821B37 /* Sources */ = {
@@ -270,7 +223,6 @@
 		};
 		C37A6A5A1D4244F100821B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E768107F3975A709B360F73 /* Pods-IDFA.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,7 +239,6 @@
 		};
 		C37A6A5B1D4244F100821B37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E5E5A563B5BC2C65FA934E /* Pods-IDFA.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
