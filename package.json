@@ -1,11 +1,11 @@
 {
-  "name": "@ptomasroos/react-native-idfa",
+  "name": "@ombori/react-native-idfa",
   "version": "1.0.0",
   "description": "Android and iOS module to read IDFA",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ptomasroos/react-native-idfa.git"
+    "url": "git+https://github.com/ombori/react-native-idfa.git"
   },
   "keywords": [
     "react-native-idfa",
@@ -35,7 +35,7 @@
      "eslint-plugin-react": "^5.1.1"
    },
   "bugs": {
-    "url": "https://github.com/ptomasroos/react-native-idfa/issues"
+    "url": "https://github.com/ombori/react-native-idfa/issues"
   },
-  "homepage": "https://github.com/ptomasroos/react-native-idfa#readme"
+  "homepage": "https://github.com/ombori/react-native-idfa#readme"
 }
