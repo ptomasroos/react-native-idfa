@@ -1,6 +1,14 @@
 # react-native-idfa
 
-How to use!
+## How to install
+
+```
+npm install @ptomasroos/react-native-idfa
+react-native link
+```
+
+## How to use!
+
 ```
 import { IDFA } from 'react-native-idfa';
 
