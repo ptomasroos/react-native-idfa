@@ -27,4 +27,11 @@ RCT_EXPORT_METHOD(getIDFA:(RCTPromiseResolveBlock)resolve
     resolve([IDFA UUIDString]);
 }
 
+RCT_EXPORT_METHOD(openSettings)
+{
+  if (&UIApplicationOpenSettingsURLString != NULL) {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+  }
+}
+
 @end

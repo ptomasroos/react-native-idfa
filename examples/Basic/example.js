@@ -9,9 +9,10 @@ import {
   AppRegistry,
   Text,
   View,
+  TouchableOpacity,
 } from 'react-native';
 
-import { IDFA } from 'react-native-idfa';
+import { IDFA } from '@ptomasroos/react-native-idfa';
 
 class Basic extends Component {
   state = {
@@ -29,8 +30,11 @@ class Basic extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Your IDFA is : {this.state.IDFA}</Text>
+        <TouchableOpacity onPress={() => IDFA.openSettings()}>
+          <Text>Open application settings</Text>
+        </TouchableOpacity>
       </View>
     );
   }

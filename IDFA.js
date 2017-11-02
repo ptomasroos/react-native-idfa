@@ -6,6 +6,10 @@ class IDFA {
   getIDFA() {
     return PTRIDFA.getIDFA();
   }
+
+  openSettings() {
+    return PTRIDFA.openSettings();
+  }
 }
 
 IDFAInstance = new IDFA();

@@ -1,5 +1,7 @@
 package com.PTR.IDFA;
 
+import android.content.Intent;
+
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -26,5 +28,12 @@ public class IDFA extends ReactContextBaseJavaModule {
         } catch (Exception e) {
             promise.reject(e);
         }
+    }
+
+    @ReactMethod
+    public void openSettings() {
+      Intent dialogIntent = new Intent(android.provider.Settings.ACTION_SETTINGS);
+               dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getReactApplicationContext().startActivity(dialogIntent);
     }
 }
