@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
   s.summary      = package['description']
   s.author       = package['author']
 
-  s.homepage     = "https://github.com/happypancake/react-native-idfa"
+  s.homepage     = "https://github.com/ptomasroos/react-native-idfa"
 
   s.license      = "MIT"
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/happypancake/react-native-idfa.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ptomasroos/react-native-idfa.git", :tag => "#{s.version}" }
   s.frameworks   = "AdSupport"
   s.source_files = "ios/IDFA/*.{h,m}"
   s.dependency "React"
