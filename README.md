@@ -1,6 +1,19 @@
 # react-native-idfa
 
-How to use!
+## How to install
+
+```
+npm install @ptomasroos/react-native-idfa
+react-native link
+```
+
+Since this library is using the advertising identifier, you must remember to add
+AdSupport in your IOS project.
+
+Add AdSupport.framework under "Link Binary With Libraries".
+
+## How to use!
+
 ```
 import { IDFA } from 'react-native-idfa';
 
