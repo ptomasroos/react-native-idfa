@@ -7,7 +7,7 @@
 //
 
 #import "PTRIDFA.h"
-#import "RCTUtils.h"
+#import <React/RCTUtils.h>
 #import <UIKit/UIKit.h>
 @import AdSupport;
 
