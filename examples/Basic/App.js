@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 
-import { IDFA } from 'react-native-idfa';
+import { IDFA } from '@ptomasroos/react-native-idfa';
 
 export default class App extends Component<{}> {
   state = {
