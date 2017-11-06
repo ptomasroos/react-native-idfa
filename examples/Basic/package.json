@@ -9,7 +9,7 @@
 	"dependencies": {
 		"react": "16.0.0",
 		"react-native": "0.50.1",
-		"react-native-idfa": "file:../../"
+		"@ptomasroos/react-native-idfa": "file:../../"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
