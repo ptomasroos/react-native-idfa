@@ -337,7 +337,7 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B90C9C9CE00B457C825B4B99 /* libIDFA.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libIDFA.a; sourceTree = "<group>"; };
 		C32E7A5D1FB05304009A990E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		EA4C7222E4854348A8206816 /* IDFA.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = IDFA.xcodeproj; path = "../node_modules/react-native-idfa/ios/IDFA.xcodeproj"; sourceTree = "<group>"; };
+		EA4C7222E4854348A8206816 /* IDFA.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = IDFA.xcodeproj; path = "../node_modules/@ptomasroos/react-native-idfa/ios/IDFA.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1182,7 +1182,7 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = BasicTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1207,7 +1207,7 @@
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = BasicTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1233,7 +1233,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = Basic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1254,7 +1254,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = Basic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1282,7 +1282,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = "Basic-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1316,7 +1316,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-idfa/ios/IDFA",
+					"$(SRCROOT)/../node_modules/@ptomasroos/react-native-idfa/ios/IDFA",
 				);
 				INFOPLIST_FILE = "Basic-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
