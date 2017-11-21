@@ -15,7 +15,7 @@ Add AdSupport.framework under "Link Binary With Libraries".
 ## How to use!
 
 ```
-import { IDFA } from 'react-native-idfa';
+import { IDFA } from '@ptomasroos/react-native-idfa';
 
 class Basic extends Component {
   state = {
