@@ -1,0 +1,10 @@
+# 2.0.0
+
+- Removed dead code from examples/Basic
+- Updated Podspec to contain correct repo
+- Fixed import statement in README
+- Enable BITCODE in ios
+- Supporting < 10 since of the change below
+- Making sure to check wether we can return and invoke the advertising id in both platforms or not
+- Updated google play services to use latest version always in gradle config, if you want another version see resolver solution: https://github.com/ptomasroos/react-native-idfa/issues/10#issuecomment-357412582
+-
