@@ -1,5 +1,7 @@
 # react-native-idfa
 
+[![npm version](https://badge.fury.io/js/react-native-idfa.svg)](https://badge.fury.io/js/react-native-idfa)
+
 ## How to install
 
 ```
