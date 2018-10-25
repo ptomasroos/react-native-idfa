@@ -1,5 +1,5 @@
 {
-  "name": "@ptomasroos/react-native-idfa",
+  "name": "react-native-idfa",
   "version": "3.0.1",
   "description": "Android and iOS module to read IDFA",
   "main": "index.js",
