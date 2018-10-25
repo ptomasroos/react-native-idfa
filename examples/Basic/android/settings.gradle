@@ -1,5 +1,0 @@
-rootProject.name = 'Basic'
-include ':@ptomasroos/react-native-idfa'
-project(':@ptomasroos/react-native-idfa').projectDir = new File(rootProject.projectDir, '../node_modules/@ptomasroos/react-native-idfa/android')
-
-include ':app'
