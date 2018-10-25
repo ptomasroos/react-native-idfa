@@ -55,7 +55,7 @@ Open simulators and see your IDFA
 
 ##  Changing react-native-idfa's com.google.android.gms:play-services-ads version
 
-In your build.gradle make sure to force the ersion to whatever version makes sense through our your dependencies
+In your build.gradle make sure to force the version to whatever version makes sense through our your dependencies
 
 ```
 configurations.all {
