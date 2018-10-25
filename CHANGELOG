@@ -1,3 +1,7 @@
+# 4.0.0
+
+Renamed project to allow usage from gradle 5.0
+
 # 3.0.0
 
 Ignore garbage from being published to npm
