@@ -41,18 +41,6 @@ class Basic extends Component {
 }
 ```
 
-## How to run example
-
-```
-git clone git@github.com:ptomasroos/react-native-idfa.git
-cd react-native-idfa/examples/Basic
-npm install
-npm run start
-```
-
-Open simulators and see your IDFA
-
-
 ##  Changing react-native-idfa's com.google.android.gms:play-services-ads version
 
 In your build.gradle make sure to force the version to whatever version makes sense through our your dependencies
