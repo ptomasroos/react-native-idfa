@@ -1,3 +1,8 @@
+# 3.0.0
+
+Ignore garbage from being published to npm
+Allow the project to respect the root project's compileSdkVersion, buildToolsVersion, minSdkVersion, targetSdkVersion
+
 # 2.1.0
 
 - minSdkVersion is now 16 instead of 21
