@@ -2,3 +2,4 @@ examples/
 android/build/
 .idea/
 node_modules/
+*.iml
