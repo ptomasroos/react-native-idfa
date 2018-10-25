@@ -3,7 +3,7 @@
 ## How to install
 
 ```
-npm install @ptomasroos/react-native-idfa
+npm install react-native-idfa
 react-native link
 ```
 
@@ -15,7 +15,7 @@ Add AdSupport.framework under "Link Binary With Libraries".
 ## How to use!
 
 ```
-import { IDFA } from '@ptomasroos/react-native-idfa';
+import { IDFA } from 'react-native-idfa';
 
 class Basic extends Component {
   state = {
