@@ -12,6 +12,13 @@ react-native link
 Since this library is using the advertising identifier, you must remember to add
 AdSupport in your IOS project.
 
+If you're using Cocoapods, there is no need to this as when you're adding react-native-idfa to your Podfile it will get added by default
+
+## Podfile
+```
+  pod 'react-native-idfa',  path: '../node_modules/react-native-idfa'
+```
+
 Add AdSupport.framework under "Link Binary With Libraries".
 
 ## How to use!
