@@ -22,6 +22,10 @@
   ],
   "author": "Tomas Roos <ptomasroos@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "bugs": {
     "url": "https://github.com/ptomasroos/react-native-idfa/issues"
   },
