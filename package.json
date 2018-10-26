@@ -1,6 +1,6 @@
 {
   "name": "react-native-idfa",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Android and iOS module to read IDFA",
   "main": "index.js",
   "scripts": {
