@@ -70,3 +70,22 @@ configurations.all {
 }
 
 ```
+
+
+## Using gms 17.0.0
+
+Google has introduced some breaking changes on 17.0.0. The SDK will throw an error if your manifest.xml is not configured properly
+
+```
+Important: This step is required as of Google Mobile Ads SDK version 17.0.0. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly."
+```
+
+```
+<manifest>
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+    </application>
+</manifest>
+```
