@@ -71,6 +71,9 @@ configurations.all {
 
 ```
 
+## Known flaws
+
+Since this is a react-native repository we will ship the code untranspiled and with flow types along it.
 
 ## Using gms 17.0.0
 
