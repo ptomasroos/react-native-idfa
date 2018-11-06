@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "rm -fr node_modules/react-native-idfa/* && cd .. && cd .. && npm pack && tar -zxvf react-native-idfa-*.tgz --strip-components 1  --directory examples/Basic/node_modules/react-native-idfa/",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4",
-    "react-native-idfa": "file:../../"
+    "react-native-idfa": "*"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
