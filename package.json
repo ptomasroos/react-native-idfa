@@ -4,7 +4,8 @@
   "description": "Android and iOS module to read IDFA (advertising identifier)",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma all --bracket-spacing --write \"**/*.js\""
+    "prettier": "prettier --single-quote --trailing-comma all --bracket-spacing --write \"**/*.js\"",
+    "test": "flow"
   },
   "repository": {
     "type": "git",
