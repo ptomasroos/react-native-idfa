@@ -3,7 +3,7 @@
 Retrieve the advertising identifier across ios and android on react-native with this small library.
 Support RN > 0.56 with or without and cocoapods
 
-[![npm version](https://badge.fury.io/js/react-native-idfa.svg)](https://badge.fury.io/js/react-native-idfa)
+[![Build Status](https://travis-ci.com/ptomasroos/react-native-idfa.svg?branch=master)](https://travis-ci.com/ptomasroos/react-native-idfa) [![npm version](https://badge.fury.io/js/react-native-idfa.svg)](https://badge.fury.io/js/react-native-idfa) [![npm downloads](https://img.shields.io/npm/dm/react-native-idfa.svg)](https://www.npmjs.com/package/react-native-idfa)
 
 ## How to install
 
