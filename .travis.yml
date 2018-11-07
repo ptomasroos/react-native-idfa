@@ -43,4 +43,4 @@ script:
   - detox test -l verbose --cleanup
   
 after_failure:
-  - tail -F $HOME/Library/Developer/CoreSimulator/Devices/5BABCDC9-5EAF-4E60-96C0-F78309091348/data/tmp/detox.last_launch_app_log.err
+  - tail -F $HOME/Library/Developer/CoreSimulator/Devices/8ABF0B4E-0370-4D7D-B9F6-E508760687A5/data/tmp/detox.last_launch_app_log.err
