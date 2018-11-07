@@ -8,8 +8,8 @@ export CODE_SIGNING_REQUIRED=NO
 brew tap wix/brew
 brew install applesimutils --HEAD
 
-$HOME/.yarn/bin install
+npm install
 
 cd examples/Basic
 
-$HOME/.yarn/bin install
+npm install
