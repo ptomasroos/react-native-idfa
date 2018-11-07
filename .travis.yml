@@ -13,15 +13,13 @@ addons:
 env:
   global:
   - NODE_VERSION=stable
+  - CODE_SIGNING_REQUIRED=NO
 
 install:
-  - sudo launchctl limit maxfiles 2048 unlimited
-  - sudo ulimit -n 10000
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
   - export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
   - nvm install $NODE_VERSION
   - nvm use $NODE_VERSION
-
   - brew install watchman
   - brew install yarn --without-node
   - brew tap wix/brew
@@ -29,11 +27,12 @@ install:
   - npm install -g react-native-cli
   - npm install -g detox-cli
   - yarn
+  - cd examples/Basic && yarn
 
 script:
-  - detox build --configuration ios.sim.debug > /dev/null 2>&1
-  - detox clean-framework-cache && detox build-framework-cache
-  - detox test --configuration ios.sim.debug -l verbose --cleanup
+  - yarn run test
+  - cd examples/Basic && detox build > /dev/null 2>&1
+  - cd examples/Basic && detox test -l verbose --cleanup
   
 after_failure:
   - tail -F $HOME/Library/Developer/CoreSimulator/Devices/5BABCDC9-5EAF-4E60-96C0-F78309091348/data/tmp/detox.last_launch_app_log.err
