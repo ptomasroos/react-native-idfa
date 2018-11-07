@@ -1,5 +1,14 @@
 language: node_js
+node_js: 10
 os: osx
-node_js:
-- '10'
 cache: yarn
+
+matrix:
+  include:
+    - language: objective-c
+      os: osx
+      osx_image: xcode10.1
+      install:
+        - ./scripts/install.ios.sh
+      script:
+        - ./scripts/ci.ios.sh
