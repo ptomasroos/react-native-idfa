@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "rm -fr node_modules/react-native-idfa/* && cd .. && cd .. && npm pack && tar -zxvf react-native-idfa-*.tgz --strip-components 1  --directory examples/Basic/node_modules/react-native-idfa/",
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-sync": "sane '/usr/bin/rsync -v -a ./node_modules/react-native-idfa/ ../../' ./node_modules/react-native-idfa/ --glob=** --watchman",
     "test": "jest"
   },
   "dependencies": {
@@ -16,7 +17,8 @@
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "sane": "^4.0.2"
   },
   "jest": {
     "preset": "react-native"
