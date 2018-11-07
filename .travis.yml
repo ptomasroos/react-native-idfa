@@ -26,8 +26,8 @@ install:
   - brew install yarn --without-node
   - brew tap wix/brew
   - brew install wix/brew/applesimutils
-  - yarn global add react-native-cli
-  - yarn global add detox-cli
+  - npm install -g react-native-cli
+  - npm install -g detox-cli
   - yarn
 
 script:
