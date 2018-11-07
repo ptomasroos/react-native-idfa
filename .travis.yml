@@ -21,18 +21,20 @@ install:
   - nvm install $NODE_VERSION
   - nvm use $NODE_VERSION
   - brew install watchman
-  - brew install yarn --without-node
   - brew tap wix/brew
   - brew install wix/brew/applesimutils
   - npm install -g react-native-cli
   - npm install -g detox-cli
-  - yarn
-  - cd examples/Basic && yarn
+  - npm install
+  - cd examples/Basic && npm install
+  - cd ..
+  - cd ..
 
 script:
-  - yarn run test
-  - cd examples/Basic && detox build > /dev/null 2>&1
-  - cd examples/Basic && detox test -l verbose --cleanup
+  - npm run test
+  - cd examples/Basic
+  - detox build > /dev/null 2>&1
+  - detox test -l verbose --cleanup
   
 after_failure:
   - tail -F $HOME/Library/Developer/CoreSimulator/Devices/5BABCDC9-5EAF-4E60-96C0-F78309091348/data/tmp/detox.last_launch_app_log.err
