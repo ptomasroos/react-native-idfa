@@ -39,6 +39,7 @@ script:
   - npm run test
   - cd examples/Basic
   - detox build > /dev/null 2>&1
+  - detox clean-framework-cache && detox build-framework-cache
   - react-native start &
   - detox test -l verbose --cleanup
   
