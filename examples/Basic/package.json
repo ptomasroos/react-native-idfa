@@ -3,19 +3,47 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "rm -fr node_modules/react-native-idfa/* && cd .. && cd .. && npm pack && tar -zxvf react-native-idfa-*.tgz --strip-components 1  --directory examples/Basic/node_modules/react-native-idfa/",
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-sync": "sane '/usr/bin/rsync -v -a ./node_modules/react-native-idfa/ ../../' ./node_modules/react-native-idfa/ --glob=** --watchman",
+    "test:e2e": "detox test -c ios.sim.debug",
+    "test:e2e:build": "detox build",
     "test": "jest"
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4",
-    "react-native-idfa": "file:../../"
+    "react-native-idfa": "*"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "detox": "^9.0.6",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "sane": "^4.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "resolutions": {
+    "@babel/core": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "schedule": "0.4.0"
+  },  
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Basic.app",
+        "build": "xcodebuild -project ios/Basic.xcodeproj -scheme Basic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone Xʀ"
+      }
+    },
+    "test-runner": "jest",
+    "runner-config": "e2e/config.json"
   },
   "jest": {
     "preset": "react-native"
