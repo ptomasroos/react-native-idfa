@@ -1,8 +1,6 @@
 language: node_js
 node_js: 10
 os: osx
-node_js:
-- '10'
 
 matrix:
   include:
@@ -13,3 +11,6 @@ matrix:
         - ./scripts/install.ios.sh
       script:
         - ./scripts/ci.ios.sh
+
+before_install:
+  - nvm install 8
