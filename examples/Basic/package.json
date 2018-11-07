@@ -37,7 +37,7 @@
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Basic.app",
         "build": "xcodebuild -project ios/Basic.xcodeproj -scheme Basic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
-        "name": "iPhone Xʀ"
+        "name": "iPhone 7"
       }
     },
     "test-runner": "jest",
