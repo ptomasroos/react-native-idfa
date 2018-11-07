@@ -6,8 +6,6 @@
     "postinstall": "rm -fr node_modules/react-native-idfa/* && cd .. && cd .. && npm pack && tar -zxvf react-native-idfa-*.tgz --strip-components 1  --directory examples/Basic/node_modules/react-native-idfa/",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "start-sync": "sane '/usr/bin/rsync -v -a ./node_modules/react-native-idfa/ ../../' ./node_modules/react-native-idfa/ --glob=** --watchman",
-    "test:e2e": "detox test -c ios.sim.debug",
-    "test:e2e:build": "detox build",
     "test": "jest"
   },
   "dependencies": {
@@ -39,7 +37,7 @@
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Basic.app",
         "build": "xcodebuild -project ios/Basic.xcodeproj -scheme Basic -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
-        "name": "iPhone Xʀ"
+        "name": "iPhone 7"
       }
     },
     "test-runner": "jest",
