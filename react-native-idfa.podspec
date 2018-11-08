@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/ptomasroos/react-native-idfa.git", :tag => "#{s.version}" }
-  s.frameworks   = "AdSupport"
   s.source_files = "ios/IDFA/*.{h,m}"
+
+  s.frameworks   = "AdSupport"
+
   s.dependency "React"
 end
