@@ -1,3 +1,11 @@
+# 4.1.0
+
+Since jcenter wiped old build tools on their side we're forced to upgrade this
+
+Upgraded Android
+buildToolsVersion to 28.0.3
+and compileSdkVersion to 28
+
 # 4.0.3
 
 Added running e2e tests
