@@ -31,8 +31,8 @@ allprojects {
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 25)
-    buildToolsVersion safeExtGet('buildToolsVersion', '25.0.0')
+    compileSdkVersion safeExtGet('compileSdkVersion', 28)
+    buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
@@ -43,7 +43,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:25.0.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.google.android.gms:play-services-ads:+'
     implementation 'com.facebook.react:react-native:+'
 }
