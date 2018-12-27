@@ -4,6 +4,9 @@ def safeExtGet(prop, fallback) {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
 }
 
+def SUPPORT_LIB_VERSION = safeExtGet('supportLibVersion', '28.0.0')
+def PLAY_SERVICES_ADS_VERSION = safeExtGet('playServicesAdsVersion', '15.0.1')
+
 buildscript {
     repositories {
         maven {
@@ -43,7 +46,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.google.android.gms:play-services-ads:+'
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIB_VERSION"
+    implementation "com.google.android.gms:play-services-ads:$PLAY_SERVICES_ADS_VERSION"
     implementation 'com.facebook.react:react-native:+'
 }
