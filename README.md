@@ -87,3 +87,16 @@ Google has introduced some breaking changes on 17.0.0. The SDK will throw an err
     * follow instructions here: https://goo.gl/h17b6x.                           *
     ******************************************************************************
 ```
+
+update your manifest.xml  
+[Google's Ad Manager guide](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml)
+
+```xml
+<manifest>
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+    </application>
+</manifest>
+```
