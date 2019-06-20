@@ -1,12 +1,13 @@
+// @flow
+
 import { NativeModules } from 'react-native';
 
 const { PTRIDFA } = NativeModules;
 
 class IDFA {
-  getIDFA() {
+  getIDFA(): Promise<string> {
     return PTRIDFA.getIDFA();
   }
 }
 
-IDFAInstance = new IDFA();
-export default IDFAInstance;
+export default new IDFA();

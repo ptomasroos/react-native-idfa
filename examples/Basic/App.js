@@ -1,15 +1,17 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
+ *
+ * @format
  * @flow
  */
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import { IDFA } from 'react-native-idfa';
 
-import { IDFA } from '@ptomasroos/react-native-idfa';
-
-export default class App extends Component<{}> {
+type Props = {};
+export default class App extends Component<Props> {
   state = {
     IDFA: '',
   };
@@ -26,9 +28,18 @@ export default class App extends Component<{}> {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        <Text>Your IDFA is : {this.state.IDFA}</Text>
+      <View
+        style={{ flex: 1, flexDirection: 'column', justifyContent: 'center' }}
+      >
+        <Text style={{ textAlign: 'center' }}>Your IDFA is :</Text>
+        {this.state.IDFA !== '' && (
+          <Text style={{ textAlign: 'center' }} testID="idfa">
+            {this.state.IDFA}
+          </Text>
+        )}
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({});

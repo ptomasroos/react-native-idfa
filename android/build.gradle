@@ -6,10 +6,14 @@ def safeExtGet(prop, fallback) {
 
 buildscript {
     repositories {
+        maven {
+            url 'https://maven.google.com'
+            name 'Google'
+        }
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:3.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,13 +22,17 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'https://maven.google.com'
+            name 'Google'
+        }
         jcenter()
     }
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 25)
-    buildToolsVersion safeExtGet('buildToolsVersion', '25.0.0')
+    compileSdkVersion safeExtGet('compileSdkVersion', 28)
+    buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
@@ -34,15 +42,8 @@ android {
     }
 }
 
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.google.android.gms:play-services-ads:16.0.0'
-    compile 'com.facebook.react:react-native:+'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'com.facebook.react:react-native:+'
 }

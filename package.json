@@ -1,8 +1,19 @@
 {
+<<<<<<< HEAD
   "name": "@ptomasroos/react-native-idfa",
   "version": "2.1.1",
   "description": "Android and iOS module to read IDFA",
+=======
+  "name": "react-native-idfa",
+  "version": "4.1.0",
+  "description": "Android and iOS module for react-native to read IDFA (advertising identifier)",
+>>>>>>> 419c08f98d43be135615b53b5dd290891649789b
   "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --single-quote --trailing-comma all --bracket-spacing --write \"**/*.js\"",
+    "release": "release-it",
+    "test": "flow"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ptomasroos/react-native-idfa.git"
@@ -20,8 +31,32 @@
     "ios",
     "android"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/prettier --single-quote --trailing-comma all --bracket-spacing --write",
+      "git add"
+    ]
+  },
   "author": "Tomas Roos <ptomasroos@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.78.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.4",
+    "release-it": "^7.6.3"
+  },
   "bugs": {
     "url": "https://github.com/ptomasroos/react-native-idfa/issues"
   },

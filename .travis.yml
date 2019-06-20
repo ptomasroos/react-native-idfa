@@ -1,0 +1,47 @@
+language: node_js
+node_js: 8.9.4
+
+cache:
+  directories:
+    - node_modules
+    - examples/Basic/node_modules
+
+matrix:
+  include:
+    - language: objective-c
+      osx_image: xcode9.4
+      xcode_sdk: iphonesimulator11.0
+
+addons:
+  artifacts: true
+
+env:
+  global:
+  - NODE_VERSION=stable
+  - CODE_SIGNING_REQUIRED=NO
+
+install:
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  - export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  - nvm install $NODE_VERSION
+  - nvm use $NODE_VERSION
+  - brew install watchman
+  - brew tap wix/brew
+  - brew install wix/brew/applesimutils
+  - npm install -g react-native-cli
+  - npm install -g detox-cli
+  - npm install
+  - cd examples/Basic && npm install
+  - cd ..
+  - cd ..
+
+script:
+  - npm run test
+  - cd examples/Basic
+  - detox build > /dev/null 2>&1
+  - detox clean-framework-cache && detox build-framework-cache
+  - react-native start &
+  - detox test -l verbose --cleanup
+  
+after_failure:
+  - tail -F $HOME/Library/Developer/CoreSimulator/Devices/8ABF0B4E-0370-4D7D-B9F6-E508760687A5/data/tmp/detox.last_launch_app_log.err

@@ -1,1 +1,10 @@
 examples/
+android/build/
+android/gradle/
+ios/IDFA.xcodeproj/project.xcworkspace/xcuserdata/
+ios/IDFA.xcodeproj/xcuserdata/
+.idea/
+node_modules/
+*.iml
+android/.gradle/
+android/.idea/
