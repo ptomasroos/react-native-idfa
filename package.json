@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "@ptomasroos/react-native-idfa",
-  "version": "2.1.1",
-  "description": "Android and iOS module to read IDFA",
-=======
   "name": "react-native-idfa",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Android and iOS module for react-native to read IDFA (advertising identifier)",
->>>>>>> 419c08f98d43be135615b53b5dd290891649789b
   "main": "index.js",
   "scripts": {
     "prettier": "prettier --single-quote --trailing-comma all --bracket-spacing --write \"**/*.js\"",
