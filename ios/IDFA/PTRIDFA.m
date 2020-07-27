@@ -10,6 +10,7 @@
 #import <React/RCTUtils.h>
 #import <UIKit/UIKit.h>
 @import AdSupport;
+@import AppTrackingTransparency;
 
 @implementation PTRIDFA
 
@@ -28,6 +29,31 @@ RCT_EXPORT_METHOD(getIDFA:(RCTPromiseResolveBlock)resolve
         resolve([IDFA UUIDString]);
     } else {
         resolve(@"");
+    }
+}
+
+RCT_EXPORT_METHOD(requestTrackingPermission:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            switch (status) {
+                case ATTrackingManagerAuthorizationStatusNotDetermined:
+                    resolve(@"not_determined");
+                    break;
+                    
+                case ATTrackingManagerAuthorizationStatusAuthorized:
+                    resolve(@"authorized");
+                    break;
+                    
+                case ATTrackingManagerAuthorizationStatusDenied:
+                case ATTrackingManagerAuthorizationStatusRestricted:
+                    resolve(@"denied");
+                    break;
+            }
+        }];
+    } else {
+        resolve(@"authorized");
     }
 }
 
