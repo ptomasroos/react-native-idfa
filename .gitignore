@@ -10,6 +10,7 @@ gradle/
 *.properties
 *.iml
 npm-debug.log
+yarn-error.log
 ios/*.xcworkspace/
 ios/Pods/**
 .DS_Store
