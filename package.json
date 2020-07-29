@@ -1,6 +1,6 @@
 {
   "name": "react-native-idfa",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "description": "Android and iOS module for react-native to read IDFA (advertising identifier)",
   "main": "index.js",
   "scripts": {
