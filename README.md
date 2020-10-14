@@ -17,6 +17,10 @@ AdSupport in your IOS project.
 
 If you're using Cocoapods, there is no need to this as when you're adding react-native-idfa to your Podfile it will get added by default
 
+## iOS 14
+
+For iOS 14 and above App Tracking Transparency permission is a must for getting IDFA. If App Tracking Transparency permission is not granted on iOS 14 and above getIDFA() returns empty string.
+
 ## Podfile
 ```
   pod 'react-native-idfa',  path: '../node_modules/react-native-idfa'
