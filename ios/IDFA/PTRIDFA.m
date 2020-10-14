@@ -10,6 +10,7 @@
 #import <React/RCTUtils.h>
 #import <UIKit/UIKit.h>
 @import AdSupport;
+@import AppTrackingTransparency;
 
 @implementation PTRIDFA
 
@@ -23,11 +24,19 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(getIDFA:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-    if([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+    if([self isAdvertisingTrackingEnabled]) {
         NSUUID *IDFA = [[ASIdentifierManager sharedManager] advertisingIdentifier];
         resolve([IDFA UUIDString]);
     } else {
         resolve(@"");
+    }
+}
+
+- (BOOL) isAdvertisingTrackingEnabled {
+    if (@available(iOS 14, *)) {
+        return [ATTrackingManager trackingAuthorizationStatus] == ATTrackingManagerAuthorizationStatusAuthorized;
+    } else {
+        return [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
     }
 }
 
