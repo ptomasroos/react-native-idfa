@@ -1,3 +1,7 @@
+# 4.2.0
+
+Support for IOS 14 added (Thanks for the contribution!)
+
 # 4.1.0
 
 Since jcenter wiped old build tools on their side we're forced to upgrade this
