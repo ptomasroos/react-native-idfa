@@ -45,5 +45,7 @@ android {
 dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.google.android.gms:play-services-ads:+'
+    implementation 'com.google.android.gms:play-services-measurement:17.0.0'
+    implementation 'com.google.android.gms:play-services-measurement-sdk:17.0.0'
     implementation 'com.facebook.react:react-native:+'
 }
